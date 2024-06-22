@@ -100,7 +100,7 @@ get_tmp_dir() {
   local tmpdir
   tmpdir="${TMPDIR:-${TMP:-${TEMP:-/tmp}}}"
   [ -d "$tmpdir" ] || local tmpdir=~/tmp
-  echo "$tmpdir/tmux-$EUID-cpu"
+  echo "$tmpdir/tmux-$EUID-status"
 }
 
 get_time() {
